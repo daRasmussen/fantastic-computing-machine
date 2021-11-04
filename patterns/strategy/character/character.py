@@ -44,7 +44,6 @@ class Character(ABC):
 class Knight(Character):
     def __init__(self, weapon: WeaponBehavior):
         super().__init__(weapon)
-        self.weapon = weapon
 
     def fight(self):
         print(f"KNIGHT FIGHTS with {self.weapon.useWeapon()}")
